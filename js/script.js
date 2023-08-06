@@ -14,38 +14,21 @@ if (randomNumber == '1') {
 } else
   computerMove = 'unkown move';
 
-  console.log(computerMove);
+  printMessage('Computer move: ' + computerMove);
 
-
-
-function getMoveName(argMoveId){
-    if(argMoveId == 1){
-      return 'rock';
-    } else if (argMoveId == 2) {
-      return 'paper';
-    } else if (argMoveId == 3) {
-        return 'scissor';        ;
-    } else printMessage('Nie znam ruchu o id ' + argMoveId + '. Zakładam, że chodziło o "kamień".');
-    return 'kamień';
-  }
-2
-  /**
- * Describe this function...
- */
-function displayResult(argPlayerMove, argComputerMove) {
-    console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
-    if (argPlayerMove == 'paper' && argComputerMove == 'rock') {
-      printMessage('You Won!');
-    } else if (argPlayerMove == 'paper' && argComputerMove == 'rock') {
-      printMessage('You Lose :(');
-    } else if (argPlayerMove == 'scissors' && argComputerMove == 'paper') {
-      printMessage('It is Draw');
-    } else {
-        printMessage('Your move is unknown');
-    }
-}
+//player move
   playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
-  playerMove = getMoveName(playerInput);
-  randomNumber = Math.floor(Math.random() * 3 + 1);
-  computerMove = getMoveName(randomNumber);
-  displayResult(playerMove, computerMove);
+  console.log('Wpisana odpowiedź to: ' + playerInput);
+  if (playerInput == '1') {
+    playerMove = 'rock';
+  } else if (playerInput == '2') {
+    playerMove = 'paper';
+  } else if (playerInput == '3') {
+    playerMove = 'scissors';
+  } else
+    playerMove = 'unkown move';
+
+  printMessage('Player move: ' + playerMove);
+
+
+
