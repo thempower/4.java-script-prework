@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<title>Kamień, papier, nożyce</title>
+	<title>rock, paper, scissors</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Press+Start+2P&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-	<div class="container">
-		<div id="buttons"></div>
-		<div id="messages"></div>
-	</div>
+    <section class="description">
+        <div class="container">
+            <div class="description-inner">
+                <h2>ROCK PAPER SCISSORS</h2>
+                <h2>human vs artificial intelligence</h2>
+                <h2>mobile version</h2>
+                <p>short game description<br>paper beats rock<br>rock beats paper<br>scissors beats paper</p>
+                <a href="https://en.wikipedia.org/wiki/Rock_paper_scissors" target="_blank"><i>game desc at wikipedia.org</i></a>
+            </div>
+        </div>
+    </section>
+    <div class="wrapper">
+    <div class="results">
+        <h4>game results</h4>
+        <div class="results-inner" id="messages"></div>
+    </div>
+    <section id="game" class="game">
+        <div class="container">
+            <div class="game-inner">
+                <div class="buttons" id="buttons">
+                    <button class="icon" type="button" id="button-rock"><i class="fa-solid fa-hand-back-fist"></i><span>rock</span></button>
+                    <button class="icon" type="button" id="button-paper"><i class="fa-solid fa-hand"></i><span>paper</span></button>
+                    <button class="icon" type="button" id="button-scissors"><i class="fa-solid fa-hand-scissors"></i><span>scissors</span</button>
+                </div>
+                <button type="button" id="button-reset"><i>clear counter</i></button>
+                <div class="back">
+                    <a href="#top"><i class="fa-solid fa-backward"></i><i>back to start page!</i></a>
+                    <a href="https://github.com/PedroPLCode" target="_blank"><i class="fa-brands fa-github"></i><i>pedro</i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
+
 </body>
 </html>
