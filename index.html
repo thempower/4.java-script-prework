@@ -13,34 +13,34 @@
 </head>
 
 <body>
-    <section class="description">
+    <section class="game-description">
         <div class="container">
             <div class="description-inner">
-                <h2>ROCK PAPER SCISSORS</h2>
-                <h2>human vs artificial intelligence</h2>
-                <h2>mobile version</h2>
-                <p>short game description<br>paper beats rock<br>rock beats paper<br>scissors beats paper</p>
-                <a href="https://en.wikipedia.org/wiki/Rock_paper_scissors" target="_blank"><i>game desc at wikipedia.org</i></a>
+                <h2>ROCK</br>PAPER</br>SCISSORS</h2>
+                <img src="images/instruction.png" alt="rules" >
+                <div class="git"><a href="https://github.com/thempower"><i class="fa-brands fa-github"><span>github</span></i></a></div>
             </div>
         </div>
     </section>
     <div class="wrapper">
+        <div class="reset">
+         <button type="button" id="button-reset"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+         <h4>RESET</h4>
+        </div>
     <div class="results">
-        <h4>game results</h4>
-        <div class="results-inner" id="messages"></div>
+        <h2>GAME RESULT</h2>
+        <div class="results-inner" id="messages">
+            <p> CHOSE YOUR MOVE TO START GAME</p>
+            <p>GOOD LUCK!</p>
+        </div>
     </div>
     <section id="game" class="game">
         <div class="container">
             <div class="game-inner">
                 <div class="buttons" id="buttons">
-                    <button class="icon" type="button" id="button-rock"><i class="fa-solid fa-hand-back-fist"></i><span>rock</span></button>
-                    <button class="icon" type="button" id="button-paper"><i class="fa-solid fa-hand"></i><span>paper</span></button>
-                    <button class="icon" type="button" id="button-scissors"><i class="fa-solid fa-hand-scissors"></i><span>scissors</span</button>
-                </div>
-                <button type="button" id="button-reset"><i>clear counter</i></button>
-                <div class="back">
-                    <a href="#top"><i class="fa-solid fa-backward"></i><i>back to start page!</i></a>
-                    <a href="https://github.com/PedroPLCode" target="_blank"><i class="fa-brands fa-github"></i><i>pedro</i></a>
+                    <button class="btn rock" type="button" id="button-rock"><i class="fa-solid fa-hand-back-fist"></i><span>rock</span></button>
+                    <button class="btn paper" type="button" id="button-paper"><i class="fa-solid fa-hand"></i><span>paper</span></button>
+                    <button class="btn scissors" type="button" id="button-scissors"><i class="fa-solid fa-hand-scissors"></i><span>scissors</span></button>
                 </div>
             </div>
         </div>
@@ -48,6 +48,5 @@
 </div>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
-
 </body>
 </html>

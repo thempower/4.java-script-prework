@@ -12,3 +12,7 @@ buttonPaper.addEventListener('click', function(){ buttonClicked('paper'); });
 buttonScissors.addEventListener('click', function(){ buttonClicked('scissors'); });
 
 buttonReset.addEventListener('click', function(){ buttonClicked('reset'); });
+
+
+
+

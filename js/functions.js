@@ -38,17 +38,16 @@ function playGame(playerMove) {
     printMessage('YOU WON!');
     scorePlayer++;
   } else if (playerMove == computerMove) {
-    printMessage('REMIS');
+    printMessage('DRAW');
   } else {
     printMessage('YOU LOSE');
     scoreComputer++;
   }
   counter++;
-  printMessage('comp had ' + computerMove + ', you had ' + playerMove);
+  printMessage('COMP ' + computerMove +  ' VS ' + playerMove + ' YOU ' );
   printMessage('round: ' + counter);
   printMessage('scoreboard:')
-  printMessage('human: ' + scorePlayer + ' / computer: ' + scoreComputer);
-  printMessage('play again!');
+  printMessage('COMP: ' + scoreComputer + '  YOU: ' + scorePlayer);
 }
 
 /**
@@ -59,9 +58,9 @@ function resetCounter() {
   scoreComputer = 0;
   counter = 0;
   clearMessages();
-  printMessage('reset');
-  printMessage('counter clear');
-  printMessage('scoreboard clear');
+  printMessage('CHOSE YOUR MOVE TO START GAME' );
+  printMessage('GOOD LUCK!' );
+
   }
 
 /**
@@ -74,3 +73,8 @@ function buttonClicked(playerMove) {
     playGame(playerMove);
   }
 }
+
+
+
+
+
