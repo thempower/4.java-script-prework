@@ -1,5 +1,5 @@
 function printMessage(msg) {
-	let div = document.createElement('div');
+	const div = document.createElement('div');
 	div.innerHTML = msg;
 	document.getElementById('messages').appendChild(div);
 }
@@ -12,7 +12,7 @@ function clearMessages() {
  * Draw random computer move and retuns move name as a string.
  */
 function getCompMove() {
-  let randomNumber = Math.floor(Math.random() * 3 + 1);
+  const randomNumber = Math.floor(Math.random() * 3 + 1);
   if (randomNumber == 1) {
     return 'rock';
   } else if (randomNumber == 2) {
@@ -26,7 +26,7 @@ function getCompMove() {
  * Makes decision about result of the game and displays on the screen.
  */
 function playGame(playerMove) {
-  let computerMove = getCompMove();
+  const computerMove = getCompMove();
   clearMessages();
   if (playerMove == 'paper' && computerMove == 'rock') {
     printMessage('YOU WON!');
